@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const cardForm = document.getElementById("cardForm");
   const modal = document.getElementById("modal");
-  const certificateContent = document.getElementById("certificateContent");
-  const closeModal = document.querySelector(".close");
+  const closeModal = document.querySelector(".closeModal");
 
   // Hide the modal initially
   modal.style.display = "none";
@@ -17,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const studentName = studentNameInput.value;
     const personalMessage = personalMessageInput.value;
-    const courseName = courseNameInput ? courseNameInput.value : "a course"; // Fallback to "a course" if no input
+    const courseName = courseNameInput.value; // Fallback to "a course" if no input
 
     if (studentName.trim() === "" || personalMessage.trim() === "") {
       alert("Please fill in all fields");
@@ -26,7 +25,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 🚨 Generate certificate content dynamically
     certificateContent.innerHTML = `
+      <h2>Certificate of Achievement</h2>
+      <p>This is to certify that</p>
       <h3>${studentName}</h3>
+      <p>has almost completed the</p>
+      <h4>${courseName} Course</h4>
+      <p>with legendary perseverance and world-class bad-assery for never giving up</p>
     `;
 
     //  Display the modal
