@@ -106,12 +106,12 @@ h1,
 
 .close {
   color: #dc7f5f;
+  cursor: pointer;
 }
 
 /* Adding a fancy border to the certificate content */
 #certificateContent {
-  background: #f9f9f9 url("path/to/your/decorative-border-image.png")
-    center/contain no-repeat;
+  background: #f9f9f9 url("") center/contain no-repeat;
 }
 
 /* Adjust button styles to fit the theme */

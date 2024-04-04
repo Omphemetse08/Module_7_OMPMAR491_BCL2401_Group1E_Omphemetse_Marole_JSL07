@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const cardForm = document.getElementById("cardForm");
   const modal = document.getElementById("modal");
-  const closeModal = document.querySelector(".closeModal");
+  const closeModal = document.querySelector(".close");
 
   // Hide the modal initially
   modal.style.display = "none";
